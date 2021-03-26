@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo logo">
+          APP<span class="logo__purple">-publisher</span>
+        </a>
+        <nav class="header__nav">
+          <a href="#" class="header__nav__link">Услуги</a>
+          <a href="#" class="header__nav__link">Проекты</a>
+          <a href="#" class="header__nav__link">Компания</a>
+          <a href="#" class="header__nav__link">Контакты</a>
+          <a href="#" class="header__nav__link">Обучение</a>
+        </nav>
+        <button class="header__btn btn">Оставить заявку</button>
+        <div class="btn-sm header__btn-lang">RU</div>
+      </div>
+      <input type="checkbox" class="burger-toggle" id="burger-toggle" />
+      <label for="burger-toggle">
+        <div class="burger btn-sm">
+          <div class="burger-container">
+            <span class="burger__line burger__line-top"></span>
+            <span class="burger__line burger__line-mid"></span>
+            <span class="burger__line burger__line-bot"></span>
+          </div>
+        </div>
+      </label>
+      <div class="nav-bar-hidden">
+        <div class="nav-bar">
+          <div class="logo nav-bar__logo">
+            APP<span class="logo__purple">-publisher</span>
+          </div>
+          <nav class="nav-bar__nav">
+            <a href="#" class="nav-bar__nav__link">Услуги</a>
+            <a href="#" class="nav-bar__nav__link">Проекты</a>
+            <a href="#" class="nav-bar__nav__link">Компания</a>
+            <a href="#" class="nav-bar__nav__link">Обучение</a>
+            <a href="#" class="nav-bar__nav__link">Контакты</a>
+          </nav>
+          <div class="nav-bar-contacts">
+            <div class="nav-bar__contact">
+              <span class="nav-bar__contact__text">Телефон</span>
+              <a href="tel:74951008002" class="nav-bar__contact__link"
+                >+7 495 100 80 02</a
+              >
+            </div>
+            <div class="nav-bar__contact">
+              <span class="nav-bar__contact__text">E-mail</span>
+              <a
+                href="mailto:go@app-publisher.ru"
+                class="nav-bar__contact__link"
+                >go@app-publisher.ru</a
+              >
+            </div>
+          </div>
+          <button class="nav-bar__btn btn">Оставить заявку</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="find-out">
+        <div class="container find-out__container">
+          <div class="find-out-promo">
+            <h1 class="find-out-promo__title title">
+              Продвигаем и издаём игры и приложения
+            </h1>
+            <p class="find-out-promo__text text">
+              Тщательно анализируем результаты, грамотно поддерживаем в развитии
+              и монетизизации вашего продукта
+            </p>
+            <div class="find-out-promo__btns">
+              <button class="find-out-promo__video-btn">
+                <span class="fa fa-play-circle find-out-promo__play"></span>
+                Смотреть промо
+              </button>
+              <button class="btn find-out-promo__more">Узнать стоимость</button>
+            </div>
+          </div>
+          <div class="find-out-img">
+            <img
+              src="./img/animations/clear-phone.png"
+              alt="clear-phone"
+              class="find-out-img__clear-phone"
+            />
+            <img
+              src="./img/animations/bubles.png"
+              alt="bubles"
+              class="find-out-img__bubles"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__container">
+          <div class="about__title-and-text">
+            <h2 class="title about__title">Чем мы занимаемся?</h2>
+            <p class="about__text text">
+              Apppublisher - это Digital-агентство и GameDev студия с
+              уникальными разработками, основанная в 2010 году.
+              <span class="about__text-space">
+                Наша команда ищет перспективные проекты по России, СНГ и всему
+                миру, и оказывает помощь в их продвижении и локализации для
+                иностранных рынков.
+              </span>
+            </p>
+          </div>
+          <div class="joystick-phone">
+            <img
+              src="./img/animations/game-phone.png"
+              alt="game-phone"
+              class="joystick-phone__phone"
+            />
+            <img
+              src="./img/animations/joystick.png"
+              alt="joystick"
+              class="joystick-phone__joystick"
+            />
+          </div>
+          <div class="about-blocks">
+            <div class="about-blocks__block">
+              <div
+                class="about-blocks__circle-cont about-blocks__circles-sm-cont"
+              >
+                <span class="fa fa-circle green"></span>
+                <span class="fa fa-circle grey"></span>
+                <span class="fa fa-circle green"></span>
+                <span class="fa fa-circle green"></span>
+                <span class="fa fa-circle purple"></span>
+                <span class="fa fa-circle green"></span>
+                <span class="fa fa-circle purple"></span>
+                <span class="fa fa-circle grey"></span>
+                <span class="fa fa-circle green"></span>
+              </div>
+              <p class="about-blocks__text subtitle">
+                40 000 000+ установок наших игр и приложений по всему миру
+              </p>
+            </div>
+            <div class="about-blocks__block">
+              <div
+                class="about-blocks__circle-cont about-blocks__circle-md-cont"
+              >
+                <span class="fa fa-circle about-blocks__circle-md"></span>
+              </div>
+              <p class="about-blocks__text subtitle">
+                10 лет успешного опыта продвижения проектов
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="games">
+        <div class="container">
+          <h2 class="games__title title">Игры и приложения</h2>
+          <h3 class="games__subtitle subtitle">
+            которые мы продвигали, издавали или разработали
+          </h3>
+        </div>
+        <div class="slider">
+          <div class="slider__item hover">
+            <div class="slider__item__img-cont">
+              <img
+                src="./img/pics/game.png"
+                alt="game"
+                class="slider__item__img"
+              />
+            </div>
+            <h3 class="slider__item__title subtitle">Survival Island: EVO 2</h3>
+            <div class="slider__item__text">
+              <span class="slider__item__left-text text"
+                >20 000 000+ скачиваний</span
+              >
+              <span class="slider__item__right-text text">23 000+ отзывов</span>
+            </div>
+          </div>
+          <div class="slider__item hover">
+            <div class="slider__item__img-cont">
+              <img
+                src="./img/pics/game.png"
+                alt="game"
+                class="slider__item__img"
+              />
+            </div>
+            <h3 class="slider__item__title subtitle">Survival Island: EVO 2</h3>
+            <div class="slider__item__text">
+              <span class="slider__item__left-text text"
+                >20 000 000+ скачиваний</span
+              >
+              <span class="slider__item__right-text text">23 000+ отзывов</span>
+            </div>
+          </div>
+          <div class="slider__item hover">
+            <div class="slider__item__img-cont">
+              <img
+                src="./img/pics/game.png"
+                alt="game"
+                class="slider__item__img"
+              />
+            </div>
+            <h3 class="slider__item__title subtitle">Survival Island: EVO 2</h3>
+            <div class="slider__item__text">
+              <span class="slider__item__left-text text"
+                >20 000 000+ скачиваний</span
+              >
+              <span class="slider__item__right-text text">23 000+ отзывов</span>
+            </div>
+          </div>
+          <div class="slider__item hover">
+            <div class="slider__item__img-cont">
+              <img
+                src="./img/pics/game.png"
+                alt="game"
+                class="slider__item__img"
+              />
+            </div>
+            <h3 class="slider__item__title subtitle">Survival Island: EVO 2</h3>
+            <div class="slider__item__text">
+              <span class="slider__item__left-text text"
+                >20 000 000+ скачиваний</span
+              >
+              <span class="slider__item__right-text text">23 000+ отзывов</span>
+            </div>
+          </div>
+          <div class="slider__item hover">
+            <div class="slider__item__img-cont">
+              <img
+                src="./img/pics/game.png"
+                alt="game"
+                class="slider__item__img"
+              />
+            </div>
+            <h3 class="slider__item__title subtitle">Survival Island: EVO 2</h3>
+            <div class="slider__item__text">
+              <span class="slider__item__left-text text"
+                >20 000 000+ скачиваний</span
+              >
+              <span class="slider__item__right-text text">23 000+ отзывов</span>
+            </div>
+          </div>
+          <div class="slider__item hover">
+            <div class="slider__item__img-cont">
+              <img
+                src="./img/pics/game.png"
+                alt="game"
+                class="slider__item__img"
+              />
+            </div>
+            <h3 class="slider__item__title subtitle">Survival Island: EVO 2</h3>
+            <div class="slider__item__text">
+              <span class="slider__item__left-text text"
+                >20 000 000+ скачиваний</span
+              >
+              <span class="slider__item__right-text text">23 000+ отзывов</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works">
+        <div class="container">
+          <h2 class="title works__title">Как мы работаем?</h2>
+          <div class="works-cards">
+            <div class="works-cards__card hover">
+              <div class="works-cards__circles-container">
+                <span class="fa fa-circle purple"></span>
+                <span class="fa fa-circle transparent"></span>
+                <span class="fa fa-circle transparent"></span>
+                <span class="fa fa-circle green"></span>
+              </div>
+              <h3 class="works-cards__title subtitle">Аудит</h3>
+              <p class="works-cards__text text">
+                Анализируем вашу игру или приложение: тематику, конкурентов,
+                UI/UX дизайн, показатели CPI, Retention и принимаем решение о
+                продвижении
+              </p>
+            </div>
+
+            <div class="works-cards__card hover">
+              <div class="bg-purple works-cards__circles-container">
+                <span class="fa fa-circle white big-circle"></span>
+              </div>
+              <h3 class="works-cards__title subtitle">Трафик и установки</h3>
+              <p class="works-cards__text text">
+                Делаем предложение в формате взаимовыгодного сотрудничества - вы
+                получаете установки и пользователей своей игры или приложения
+              </p>
+            </div>
+
+            <div class="works-cards__card hover">
+              <div class="works-cards__circles-container">
+                <span class="fa fa-circle purple"></span>
+                <span class="fa fa-circle green"></span>
+                <span class="fa fa-circle green"></span>
+                <span class="fa fa-circle purple"></span>
+              </div>
+              <h3 class="works-cards__title subtitle">Поддержка</h3>
+              <p class="works-cards__text text">
+                Индивидуальная работа с каждой командой или разработчиком,
+                которые получают маркетинговую поддержку (в том числе — и
+                экспертную), доступ к аналитике и сервисам
+              </p>
+            </div>
+
+            <div class="works-cards__card hover">
+              <div class="works-cards__circles-container">
+                <span class="fa fa-circle grey"></span>
+                <span class="fa fa-circle purple"></span>
+                <span class="fa fa-circle purple"></span>
+              </div>
+              <h3 class="works-cards__title subtitle">Экспертиза</h3>
+              <p class="works-cards__text text">
+                Услуги по ASO оптимизации любых приложений, аудиты текущего
+                состояния продукта, маркетинговые тесты и обеспечиваем трафик
+                игры или приложения
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="container">
+          <h2 class="title video__title">Делимся экспертизой</h2>
+          <h3 class="subtitle video__subtitle">
+            рассказываем о продвижении мобильных игр и приложений
+          </h3>
+        </div>
+        <div class="video-slider">
+          <div class="video-slider__block hover">
+            <div class="video-slider__video-cont">Video</div>
+            <p class="video-slider__text text">
+              Продвижение мобильных приложений и игр - Бесплатные способы ч.1
+            </p>
+          </div>
+          <div class="video-slider__block hover">
+            <div class="video-slider__video-cont">Video</div>
+            <p class="video-slider__text text">
+              Продвижение мобильных приложений и игр - Бесплатные способы ч.1
+            </p>
+          </div>
+          <div class="video-slider__block hover">
+            <div class="video-slider__video-cont">Video</div>
+            <p class="video-slider__text text">
+              Продвижение мобильных приложений и игр - Бесплатные способы ч.1
+            </p>
+          </div>
+          <div class="video-slider__block hover">
+            <div class="video-slider__video-cont">Video</div>
+            <p class="video-slider__text text">
+              Продвижение мобильных приложений и игр - Бесплатные способы ч.1
+            </p>
+          </div>
+          <div class="video-slider__block hover">
+            <div class="video-slider__video-cont">Video</div>
+            <p class="video-slider__text text">
+              Продвижение мобильных приложений и игр - Бесплатные способы ч.1
+            </p>
+          </div>
+          <div class="video-slider__block hover">
+            <div class="video-slider__video-cont">Video</div>
+            <p class="video-slider__text text">
+              Продвижение мобильных приложений и игр - Бесплатные способы ч.1
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us">
+        <div class="container">
+          <div class="form-cont">
+            <h2 class="title form-cont__title">Связаться с нами</h2>
+            <h3 class="subtitle form-cont__subtitle">
+              заполните форму и мы вам перезвоним
+            </h3>
+            <form action="" class="form-cont__form">
+              <input
+                type="text"
+                placeholder="Имя"
+                class="form-cont__input"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Телефон"
+                class="form-cont__input"
+                required
+              />
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="form-cont__input"
+                required
+              />
+              <input
+                type="url"
+                placeholder="URL-ссылка на приложение"
+                class="form-cont__input"
+                required
+              />
+              <select
+                name="help"
+                id="help"
+                class="form-cont__input arrow form-cont__select"
+              >
+                <option value="disable">Чем мы можем помочь?</option>
+                <option value="1">Нужен издатель</option>
+                <option value="2">ASO продвижение PlayМаркет / AppStore</option>
+                <option value="3">Аудит</option>
+                <option value="4">Рекламный трафик</option>
+              </select>
+              <select
+                name="budget"
+                id="budget"
+                class="form-cont__input arrow form-cont__select"
+              >
+                <option value="disable">Бюджета нет - нужен издатель</option>
+                <option value="1">До 500 $</option>
+                <option value="2">500 - 1 500 $</option>
+                <option value="3">1 500 - 5 000 $</option>
+                <option value="4">5 000 - 10 00 $</option>
+                <option value="5">10 000 - 40 000 $</option>
+                <option value="6">Более 40 000 $</option>
+              </select>
+              <div class="form-cont__checkbox-cont">
+                <input
+                  type="checkbox"
+                  class="form-cont__checkbox-cont__checkbox"
+                  id="form-cont__checkbox-cont__checkbox"
+                />
+                <label for="form-cont__checkbox-cont__checkbox">
+                  <div class="form-cont__checkbox-cont__block">
+                    <span
+                      class="form-cont__checkbox-cont__block-line form-cont__checkbox-cont__block-line-sm"
+                    ></span>
+                    <span
+                      class="form-cont__checkbox-cont__block-line form-cont__checkbox-cont__block-line-lg"
+                    ></span>
+                  </div>
+                </label>
+                <label for="form-cont__checkbox-cont__checkbox">
+                  <span class="form-cont__checkbox-cont__text text"
+                    >Я согласен(-на) на обработку персональных данных.</span
+                  >
+                </label>
+              </div>
+              <input
+                type="submit"
+                value="Отправить"
+                class="form-cont__btn btn"
+              />
+              <img
+                src="./img/animations/message-lg.png"
+                alt="img-lg"
+                class="form-cont__img-lg"
+              />
+              <img
+                src="./img/animations/message-sm.png"
+                alt="img-sm"
+                class="form-cont__img-sm"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <h2 class="title contacts__title">Контакты</h2>
+        </div>
+        <div class="contacts__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64408.84827199383!2d30.636241536997098!3d46.43812207714145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633e782fadbff%3A0x6479539551154716!2zNDbCsDI3JzA0LjQiTiAzMMKwNDUnMTUuMCJF!5e0!3m2!1sru!2sua!4v1615315631579!5m2!1sru!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="map"
+          ></iframe>
+        </div>
+        <div class="container contacts__container">
+          <div class="contacts-cont">
+            <a href="tel:74951008002" class="contacts-cont__title subtitle">
+              Телефон
+              <span class="contacts-cont__text text">+7 495 100 80 02</span>
+            </a>
+            <a
+              href="mailto:go@app-publisher.ru"
+              class="contacts-cont__title subtitle"
+            >
+              E-mail
+              <span class="contacts-cont__text text">go@app-publisher.ru</span>
+            </a>
+            <a
+              href="https://www.google.com.ua/maps/place/46%C2%B027'04.4%22N+30%C2%B045'15.0%22E/@46.4456659,30.6404733,12z/data=!4m9!1m2!2m1!1sdf!3m5!1s0x40c633e782fadbff:0x6479539551154716!7e2!8m2!3d46.451223!4d30.7541442"
+              class="contacts-cont__title subtitle"
+            >
+              Адрес
+              <span class="contacts-cont__text text"
+                >г. Москва, ул. Новый Арбат, 27а
+              </span>
+            </a>
+            <div class="contacts-cont__title subtitle">
+              Режим работы
+              <div class="contacts-cont__days">
+                <span class="contacts-cont__text text contacts-cont__days-left"
+                  >Пн - Пт Сб - Вс
+                </span>
+                <span class="contacts-cont__text text contacts-cont__days-right"
+                  >10:00 - 18:00 выходной</span
+                >
+              </div>
+            </div>
+            <div class="socials">
+              <div class="btn-sm socials__item hover">
+                <span class="fa fa-youtube-play"></span>
+              </div>
+              <div class="btn-sm socials__item hover">
+                <span class="fa fa-instagram"></span>
+              </div>
+              <div class="btn-sm socials__item hover">
+                <span class="fa fa-twitter"></span>
+              </div>
+              <div class="btn-sm socials__item hover">
+                <span class="fa fa-vk"></span>
+              </div>
+              <div class="btn-sm socials__item hover">
+                <span class="fa fa-facebook-square"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <span class="footer__copy text">APP-publisher, &#169; 2021 </span>
+        <span class="footer__right text">Политика конфиденциальности</span>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

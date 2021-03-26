@@ -1,0 +1,105 @@
+.main {
+  overflow: hidden;
+  background: url(~img/bg-lines.png) no-repeat top;
+  background-position-y: 120px;
+  @media screen and (min-width: 1024px) {
+    background-position-y: unset;
+    background-size: contain;
+  }
+}
+
+.find-out {
+  padding: 80px 0 60px;
+  &__container {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+  }
+}
+
+.find-out-promo {
+  &__title {
+    max-width: 681px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    text-align: center;
+  }
+  &__text {
+    max-width: 663px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &__video-btn {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 0.875em; //14px
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  &__play {
+    font-size: 2em;
+    color: $purple;
+    margin-right: 10px;
+  }
+  &__more {
+    margin: 0 auto;
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    &__title {
+      font-size: 3em; //48px
+    }
+    &__text {
+      font-size: 1.25em; //20px
+    }
+    &__btns {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      width: 400px;
+    }
+    &__video-btn {
+      margin: unset;
+      order: 2;
+      margin-left: 10px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__title {
+      font-size: 4em; //64px
+    }
+  }
+}
+
+.find-out-promo__video-btn:hover > .find-out-promo__play {
+  color: $green;
+}
+
+.find-out-img {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  &__clear-phone {
+    position: absolute;
+    width: 100%;
+  }
+  &__bubles {
+    position: absolute;
+    width: 100%;
+    left: -20%;
+    z-index: -1;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 700px;
+    top: -80px;
+  }
+}

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 25px;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    padding: 0 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0 130px;
+  }
+  @media screen and (min-width: 1920px) {
+    padding: 0 220px;
+  }
+}
+
+.logo {
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  &__purple {
+    color: $purple;
+  }
+}
+
+//text
+
+.title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-size: 2em; //32px
+  line-height: 1.25em; //40px
+  color: $title;
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 4em;
+  }
+}
+
+.subtitle {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1em; //16px
+  line-height: 1.5625em; //25px
+  color: $title-sm;
+  @media screen and (min-width: 1024px) {
+    font-size: 1.5em; //24px
+    text-align: left;
+  }
+}
+
+.text {
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.75em; //16px
+  line-height: 1.333333333333333em; //16px
+  color: $text;
+  @media screen and (min-width: 1440px) {
+    font-size: 1.25em; //20px
+  }
+}
+
+//btns
+
+.btn {
+  min-height: 200px;
+  min-height: 50px;
+  padding: 19px 40px;
+  background-color: $purple;
+  border: 0;
+  border-radius: 35px;
+  outline: none;
+  color: $btn;
+  font-weight: 700;
+  font-size: 0.875em; //14px
+  line-height: 1.214285714285714em; //17px
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    background-color: $green;
+    color: $title-sm;
+    transition: all 0.2s;
+  }
+}
+
+.btn-sm {
+  width: 50px;
+  height: 50px;
+  background-color: $btn;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px grey;
+}
+
+//circles
+
+.green {
+  color: $green;
+}
+
+.grey {
+  color: #e0e0e0;
+}
+
+.purple {
+  color: $purple;
+}
+
+.white {
+  color: #fff;
+}
+
+.transparent {
+  color: transparent;
+}
+
+//hover
+
+.hover {
+  box-shadow: 0px 17.2969px 28.8282px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 1024px) {
+  .hover {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    box-shadow: none;
+    border: 1px solid $border;
+    transition: all 0.3s;
+    &:hover {
+      filter: unset;
+      opacity: unset;
+      box-shadow: 0px 17.2969px 28.8282px rgba(0, 0, 0, 0.1);
+      border: 1px solid transparent;
+      transition: all 0.3s;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  &__copy {
+    text-align: center;
+    margin-right: 20px;
+    color: $title-sm;
+  }
+  &__right {
+    color: $title-sm;
+  }
+}

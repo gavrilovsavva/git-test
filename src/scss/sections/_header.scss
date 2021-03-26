@@ -1,0 +1,236 @@
+.header {
+  padding-top: 30px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__logo {
+    color: $title;
+    font-size: 1.25em; //24px
+    line-height: 1.25em; //30px
+  }
+  &__nav {
+    display: none;
+    font-size: 1.125em; //18px
+    line-height: 1.222222222222222em; //22px
+    &__link {
+      color: $text;
+      position: relative;
+      padding: 10px;
+      &:hover {
+        top: -10px;
+        padding: 10px 10px 20px 10px;
+        color: $title;
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 10px;
+          background-color: $purple;
+          position: absolute;
+          top: -30px;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          border-radius: 0px 0px 10px 10px;
+        }
+      }
+    }
+  }
+  &__btn {
+    display: none;
+    padding: 14px 15px;
+  }
+  &__btn-lang {
+    margin-left: auto;
+    margin-right: 55px;
+    transform: translateY(-10px);
+    color: $purple;
+    box-shadow: 0 0 10px grey;
+  }
+  @media screen and (min-width: 375px) {
+    &__logo {
+      font-size: 1.5em; //24px
+      line-height: 1.25em; //30px
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    &__nav {
+      display: unset;
+    }
+    &__btn {
+      display: unset;
+    }
+    &__btn-lang {
+      margin-right: unset;
+      margin-left: unset;
+      transform: unset;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__nav {
+      &__link {
+        padding: 10px 25px;
+        &:hover {
+          padding: 10px 25px 20px 25px;
+        }
+      }
+    }
+    &__btn {
+      padding: 14px 60px;
+    }
+  }
+}
+
+.head {
+}
+.burger-toggle {
+  display: none;
+}
+
+.burger {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  z-index: 100;
+  transition: all 0.3s;
+  &-container {
+    height: 12px;
+    width: 18px;
+    position: relative;
+  }
+  &__line {
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $title-sm;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  &__line-top {
+    top: 0;
+  }
+  &__line-mid {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__line-bot {
+    bottom: 0;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 0 100px;
+    display: none;
+  }
+}
+
+.burger-toggle:checked
+  + label
+  > .burger
+  > .burger-container
+  > .burger__line-top {
+  transform: rotate(-44deg) translate(-4px, 2px);
+  transition: all 0.3s 0.2s;
+  height: 4px;
+  width: 22px;
+}
+.burger-toggle:checked
+  + label
+  > .burger
+  > .burger-container
+  > .burger__line-mid {
+  transform: translateX(-50px);
+  transition: all 0.6s;
+}
+.burger-toggle:checked
+  + label
+  > .burger
+  > .burger-container
+  > .burger__line-bot {
+  transform: rotate(45deg) translate(-4px, -2px);
+  transition: all 0.3s 0.2s;
+  height: 4px;
+  width: 22px;
+}
+.burger-toggle:checked + label > .burger {
+  background-color: unset;
+  transition: all 0.3s;
+  box-shadow: unset;
+}
+
+.nav-bar {
+  width: 290px;
+  background: #fff;
+  padding: 115px 38px 120px;
+  position: absolute;
+  top: -30px;
+  right: -100%;
+  backdrop-filter: brightness(60%);
+  transition: all 0.5s ease;
+  z-index: 100;
+  &__logo {
+    font-size: 1.75em; //28px
+    line-height: 1.25em; //35px
+    margin-bottom: 60px;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+    &__link {
+      color: $title;
+      font-size: 1.25em; //20px
+      line-height: 1.3em; //26px
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      margin-bottom: 55px;
+    }
+    &__text {
+      font-size: 1em; //16px
+      line-height: 1.5625em; //25px
+      font-weight: 700;
+      color: $dark-purple;
+    }
+    &__link {
+      font-size: 1.25em; //20px
+      line-height: 1.25em; //25px
+      color: $text;
+    }
+  }
+}
+
+.burger-toggle:checked ~ .nav-bar-hidden > .nav-bar {
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+.nav-bar-hidden {
+  min-height: 120%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: -30px;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.burger-toggle:checked ~ .nav-bar-hidden {
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.burger-toggle:checked ~ .nav-bar-hidden {
+  backdrop-filter: blur(10px);
+}

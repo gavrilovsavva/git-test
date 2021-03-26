@@ -1,0 +1,138 @@
+.contact-us {
+  padding: 40px 0;
+  background: url("~img/bg-lines-bot.png") center no-repeat;
+  background-size: cover;
+}
+
+.form-cont {
+  background-color: $purple;
+  border-radius: 21.3072px;
+  padding: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+  &__title {
+    text-align: left;
+    color: $btn;
+  }
+  &__subtitle {
+    text-align: left;
+    color: $btn;
+    margin-bottom: 30px;
+  }
+  &__input {
+    padding: 14px 0 14px 20px;
+    font-size: 0.75em; //12px
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    width: 100%;
+    appearance: none;
+    position: relative;
+    border: 2px solid transparent;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &:focus {
+      background-color: $btn;
+      border: 2px solid #04d7cd;
+    }
+  }
+  &__checkbox-cont {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    &__block {
+      width: 15px;
+      height: 15px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      position: relative;
+      margin-right: 10px;
+      &-line {
+        display: block;
+        background-color: #fff;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        display: none;
+      }
+      &-line-sm {
+        width: 4px;
+        border-radius: 40% 0 0 40%;
+        transform: rotate(45deg) translate(2px, -2px);
+      }
+      &-line-lg {
+        width: 7px;
+        border-radius: 1px 40% 40% 0;
+        transform: rotate(-45deg) translate(4px, 2px);
+      }
+    }
+    &__text {
+      color: #fff;
+    }
+  }
+  &__btn {
+    background-color: $dark-purple;
+    padding: 17px 60px;
+    display: block;
+    margin: 0 auto;
+  }
+  &__img-lg {
+    position: absolute;
+    right: -50px;
+    top: -30%;
+    width: 300px;
+    display: none;
+  }
+  &__img-sm {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    border-radius: 70px;
+    padding: 60px;
+    &__form {
+      display: grid;
+      grid-template-columns: 33% 33%;
+      grid-template-rows: repeat(6, 1fr);
+      grid-gap: 10px;
+      position: relative;
+    }
+    &__input {
+      font-size: 1.25em; //20px
+    }
+    &__select {
+      grid-column: 1/3;
+    }
+    &__checkbox-cont {
+      grid-column: 1/3;
+    }
+    &__btn {
+      grid-column: 1/3;
+    }
+    &__img-lg {
+      display: unset;
+    }
+    &__img-sm {
+      display: unset;
+    }
+  }
+}
+
+.arrow {
+  background: url("~img/arrow.svg") #fff no-repeat bottom 8px right 10px;
+}
+
+.form-cont__checkbox-cont__checkbox:checked
+  + label
+  > .form-cont__checkbox-cont__block
+  > .form-cont__checkbox-cont__block-line {
+  display: block;
+}
+
+.form-cont__checkbox-cont__checkbox {
+  display: none;
+}
